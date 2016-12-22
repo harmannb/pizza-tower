@@ -1,0 +1,16 @@
+.my-container img {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height:100%;
+        opacity: 0.95;
+      }
+      .my-container div {
+          position: relative;
+          z-index: 2;
+      }
+      #welcomeModal{
+        color: red;
+        font-weight: bold;
+      }
