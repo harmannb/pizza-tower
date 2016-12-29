@@ -12,15 +12,14 @@ anguapp.controller('welcomeCtrl',function($scope,$uibModal,$uibModalInstance,$lo
         gameFactory.playgame(player_arr, $scope.player);
       })
 
-      // socket.on('existing_players', function socketdata(player_arr){
-      // 	gameFactory.existing_players(player_arr);
-      // })
+      socket.on('existing_players', function socketdata(player_arr){
+      	gameFactory.existing_players(player_arr);
+      })
 
-      // gameFactory.saveFormData($scope.player,function(){
-      //   $location.path('/gamepage');
-      //   //$uibModalInstance.close();
-      // })
+      gameFactory.saveFormData($scope.player,function(){
+        $location.path('/gamepage');
+        $uibModalInstance.close();
+      })
     }
-
 
 })
